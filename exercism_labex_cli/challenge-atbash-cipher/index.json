@@ -1,0 +1,53 @@
+{
+    "type": "challenge",
+    "title": "Atbash Cipher",
+    "description": "Write a script to complete the following challenge.",
+    "difficulty": "Intermediate",
+    "time": 20,
+    "details": {
+        "steps": [
+            {
+                "title": "Atbash Cipher",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check if all test cases have been passed",
+                        "file": "verify1.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "linux/echo","linux/echo"
+                ],
+                "solutions": [
+                    "atbash_cipher.sh"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+      "host01": [
+        {
+          "file": "atbash_cipher.sh",
+          "target": "~/project",
+          "chmod": "777"
+        },
+        {
+          "file": "atbash_cipher_test.sh",
+          "target": "/tmp"
+        }
+      ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
