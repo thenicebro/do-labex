@@ -1,7 +1,7 @@
 #!/bin/bash
 
-src_path=~/project/exercism_bash-master
-des_path=~/project/exercism_labex_cli
+src_path=~/myrepo/do-labex/exercism_bash-master
+des_path=~/myrepo/do-labex/exercism_labex_cli
 
 index_json(){
 
@@ -47,6 +47,12 @@ title_name(){
 
 }
 
+shell_test(){
+	# $1: "${src_shell_name}" 
+	# $2: ${des_path}/challenge-${src_name}/assets/${src_testshell_correct_name}
+	sed -i "s/run bash ${1}/run bash \~\/project\/${1}/g" $2
+
+}
 
 for src_name in $(ls ${src_path})
 do
@@ -83,4 +89,8 @@ do
 
 	# edit step1.md
 	step1_md "${src_shell_name}" ${des_path}/challenge-${src_name}/step1.md
+	
+	# edit path of test.sh
+	shell_test "${src_shell_name}" ${des_path}/challenge-${src_name}/assets/${src_testshell_correct_name}
+
 done
