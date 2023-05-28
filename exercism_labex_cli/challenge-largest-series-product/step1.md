@@ -11,4 +11,4 @@ Write a script to complete the following challenge.
 - Script name: `largest_series_product.sh`.
 - Work directory: `~/project`.
 
-### Sample Execution / Output
+## Sample Execution / Output

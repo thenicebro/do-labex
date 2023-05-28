@@ -6,7 +6,7 @@
 @test "zero rows" {
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     expected=""
-    run bash pascals_triangle.sh 0
+    run bash ~/project/pascals_triangle.sh 0
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -17,7 +17,7 @@
 1
 END
 )
-    run bash pascals_triangle.sh 1
+    run bash ~/project/pascals_triangle.sh 1
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -29,7 +29,7 @@ END
 1 1
 END
 )
-    run bash pascals_triangle.sh 2
+    run bash ~/project/pascals_triangle.sh 2
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -42,7 +42,7 @@ END
 1 2 1
 END
 )
-    run bash pascals_triangle.sh 3
+    run bash ~/project/pascals_triangle.sh 3
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -56,7 +56,7 @@ END
 1 3 3 1
 END
 )
-    run bash pascals_triangle.sh 4
+    run bash ~/project/pascals_triangle.sh 4
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -71,7 +71,7 @@ END
 1 4 6 4 1
 END
 )
-    run bash pascals_triangle.sh 5
+    run bash ~/project/pascals_triangle.sh 5
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -87,7 +87,7 @@ END
 1 5 10 10 5 1
 END
 )
-    run bash pascals_triangle.sh 6
+    run bash ~/project/pascals_triangle.sh 6
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -107,7 +107,7 @@ END
 1 9 36 84 126 126 84 36 9 1
 END
 )
-    run bash pascals_triangle.sh 10
+    run bash ~/project/pascals_triangle.sh 10
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -138,7 +138,7 @@ END
 1 20 190 1140 4845 15504 38760 77520 125970 167960 184756 167960 125970 77520 38760 15504 4845 1140 190 20 1
 END
 )
-    run bash pascals_triangle.sh 21
+    run bash ~/project/pascals_triangle.sh 21
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }

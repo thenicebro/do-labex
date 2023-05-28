@@ -18,7 +18,7 @@
             "showstderr": true
           }
         ],
-        "skills": ["linux/echo", "linux/echo"],
+        "skills": ["linux/echo", "linux/tr"],
         "solutions": ["acronym.sh"]
       }
     ],

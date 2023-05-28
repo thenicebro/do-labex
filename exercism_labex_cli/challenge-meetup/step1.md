@@ -11,4 +11,4 @@ Write a script to complete the following challenge.
 - Script name: `meetup.sh`.
 - Work directory: `~/project`.
 
-### Sample Execution / Output
+## Sample Execution / Output

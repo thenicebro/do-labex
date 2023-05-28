@@ -9,7 +9,7 @@
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     input=""
     expected=""
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -18,7 +18,7 @@
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     input="A1"
     expected=$'A\n1'
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -27,7 +27,7 @@
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     input=$'A\n1'
     expected="A1"
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -36,7 +36,7 @@
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     input=$'ABC\n123'
     expected=$'A1\nB2\nC3'
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -45,7 +45,7 @@
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     input="Single line."
     expected=$'S\ni\nn\ng\nl\ne\n \nl\ni\nn\ne\n.'
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -76,7 +76,7 @@ e.
 .
 END
 )
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -107,7 +107,7 @@ en
  .
 END
 )
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -141,7 +141,7 @@ e
 .
 END
 )
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -150,7 +150,7 @@ END
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     input=$'HEART\nEMBER\nABUSE\nRESIN\nTREND'
     expected=$'HEART\nEMBER\nABUSE\nRESIN\nTREND'
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -159,7 +159,7 @@ END
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     input=$'FRACTURE\nOUTLINED\nBLOOMING\nSEPTETTE'
     expected=$'FOBS\nRULE\nATOP\nCLOT\nTIME\nUNIT\nRENT\nEDGE'
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -168,7 +168,7 @@ END
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     input=$'T\nEE\nAAA\nSSSS\nEEEEE\nRRRRRR'
     expected=$'TEASER\n EASER\n  ASER\n   SER\n    ER\n     R'
-    run bash transpose.sh <<< "$input"
+    run bash ~/project/transpose.sh <<< "$input"
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }

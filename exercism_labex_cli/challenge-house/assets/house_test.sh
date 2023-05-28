@@ -6,7 +6,7 @@
 @test "verse 1" {
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     expected="This is the house that Jack built."
-    run bash house.sh 1 1
+    run bash ~/project/house.sh 1 1
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }       
@@ -18,7 +18,7 @@ This is the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 2 2
+    run bash ~/project/house.sh 2 2
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -31,7 +31,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 3 3
+    run bash ~/project/house.sh 3 3
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -45,7 +45,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 4 4
+    run bash ~/project/house.sh 4 4
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -60,7 +60,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 5 5
+    run bash ~/project/house.sh 5 5
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -76,7 +76,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 6 6
+    run bash ~/project/house.sh 6 6
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -93,7 +93,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 7 7
+    run bash ~/project/house.sh 7 7
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -111,7 +111,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 8 8
+    run bash ~/project/house.sh 8 8
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -130,7 +130,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 9 9
+    run bash ~/project/house.sh 9 9
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -150,7 +150,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 10 10
+    run bash ~/project/house.sh 10 10
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -171,7 +171,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 11 11
+    run bash ~/project/house.sh 11 11
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -193,7 +193,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 12 12
+    run bash ~/project/house.sh 12 12
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -237,7 +237,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 4 8
+    run bash ~/project/house.sh 4 8
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -336,7 +336,7 @@ that ate the malt
 that lay in the house that Jack built.
 END
 )
-    run bash house.sh 1 12
+    run bash ~/project/house.sh 1 12
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -344,28 +344,28 @@ END
 
 @test "invalid verse 1" {
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
-    run bash house.sh 0 12
+    run bash ~/project/house.sh 0 12
     [[ $status -ne 0 ]]
     [[ $output == *invalid* ]]
 }
 
 @test "invalid verse 2" {
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
-    run bash house.sh 1 -1
+    run bash ~/project/house.sh 1 -1
     [[ $status -ne 0 ]]
     [[ $output == *invalid* ]]
 }
 
 @test "invalid verse 3" {
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
-    run bash house.sh 14 12
+    run bash ~/project/house.sh 14 12
     [[ $status -ne 0 ]]
     [[ $output == *invalid* ]]
 }
 
 @test "invalid verse 4" {
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
-    run bash house.sh 1 13
+    run bash ~/project/house.sh 1 13
     [[ $status -ne 0 ]]
     [[ $output == *invalid* ]]
 }

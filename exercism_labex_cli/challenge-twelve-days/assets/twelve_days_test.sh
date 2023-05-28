@@ -8,7 +8,7 @@
 On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 1 1
+    run bash ~/project/twelve_days.sh 1 1
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -19,7 +19,7 @@ END
 On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 2 2
+    run bash ~/project/twelve_days.sh 2 2
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -30,7 +30,7 @@ END
 On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 3 3
+    run bash ~/project/twelve_days.sh 3 3
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -41,7 +41,7 @@ END
 On the fourth day of Christmas my true love gave to me: four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 4 4
+    run bash ~/project/twelve_days.sh 4 4
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -52,7 +52,7 @@ END
 On the fifth day of Christmas my true love gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 5 5
+    run bash ~/project/twelve_days.sh 5 5
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -63,7 +63,7 @@ END
 On the sixth day of Christmas my true love gave to me: six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 6 6
+    run bash ~/project/twelve_days.sh 6 6
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -74,7 +74,7 @@ END
 On the seventh day of Christmas my true love gave to me: seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 7 7
+    run bash ~/project/twelve_days.sh 7 7
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -85,7 +85,7 @@ END
 On the eighth day of Christmas my true love gave to me: eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 8 8
+    run bash ~/project/twelve_days.sh 8 8
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -96,7 +96,7 @@ END
 On the ninth day of Christmas my true love gave to me: nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 9 9
+    run bash ~/project/twelve_days.sh 9 9
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -107,7 +107,7 @@ END
 On the tenth day of Christmas my true love gave to me: ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 10 10
+    run bash ~/project/twelve_days.sh 10 10
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -118,7 +118,7 @@ END
 On the eleventh day of Christmas my true love gave to me: eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 11 11
+    run bash ~/project/twelve_days.sh 11 11
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -129,7 +129,7 @@ END
 On the twelfth day of Christmas my true love gave to me: twelve Drummers Drumming, eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 12 12
+    run bash ~/project/twelve_days.sh 12 12
     (( status == 0 ))
     [[ $output == "$expected" ]]
     }
@@ -142,7 +142,7 @@ On the second day of Christmas my true love gave to me: two Turtle Doves, and a 
 On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 1 3
+    run bash ~/project/twelve_days.sh 1 3
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -155,7 +155,7 @@ On the fifth day of Christmas my true love gave to me: five Gold Rings, four Cal
 On the sixth day of Christmas my true love gave to me: six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 4 6
+    run bash ~/project/twelve_days.sh 4 6
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -177,7 +177,7 @@ On the eleventh day of Christmas my true love gave to me: eleven Pipers Piping, 
 On the twelfth day of Christmas my true love gave to me: twelve Drummers Drumming, eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 END
 )
-    run bash twelve_days.sh 1 12
+    run bash ~/project/twelve_days.sh 1 12
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }

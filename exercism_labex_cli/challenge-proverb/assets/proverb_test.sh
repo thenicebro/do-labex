@@ -3,7 +3,7 @@
 @test "zero pieces" {
     #[[ $BATS_RUN_SKIPPED == true  ]] || skip
     expected=""
-    run bash proverb.sh
+    run bash ~/project/proverb.sh
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -14,7 +14,7 @@
 And all for the want of a nail.
 END
 )
-    run bash proverb.sh nail
+    run bash ~/project/proverb.sh nail
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -26,7 +26,7 @@ For want of a nail the shoe was lost.
 And all for the want of a nail.
 END
 )
-    run bash proverb.sh nail shoe
+    run bash ~/project/proverb.sh nail shoe
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -39,7 +39,7 @@ For want of a shoe the horse was lost.
 And all for the want of a nail.
 END
 )
-    run bash proverb.sh nail shoe horse
+    run bash ~/project/proverb.sh nail shoe horse
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -57,7 +57,7 @@ For want of a battle the kingdom was lost.
 And all for the want of a nail.
 END
 )
-    run bash proverb.sh nail shoe horse rider message battle kingdom
+    run bash ~/project/proverb.sh nail shoe horse rider message battle kingdom
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -71,7 +71,7 @@ For want of a soldier the battle was lost.
 And all for the want of a pin.
 END
 )
-    run bash proverb.sh pin gun soldier battle
+    run bash ~/project/proverb.sh pin gun soldier battle
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -83,7 +83,7 @@ For want of a rusty nail the horse shoe was lost.
 And all for the want of a rusty nail.
 END
 )
-    run bash proverb.sh "rusty nail" "horse shoe"
+    run bash ~/project/proverb.sh "rusty nail" "horse shoe"
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -95,7 +95,7 @@ For want of a quotes the * was lost.
 And all for the want of a quotes.
 END
 )
-    run bash proverb.sh quotes "*"
+    run bash ~/project/proverb.sh quotes "*"
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }

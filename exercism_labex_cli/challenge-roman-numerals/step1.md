@@ -11,4 +11,4 @@ Write a script to complete the following challenge.
 - Script name: `roman_numerals.sh`.
 - Work directory: `~/project`.
 
-### Sample Execution / Output
+## Sample Execution / Output

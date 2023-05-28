@@ -11,4 +11,4 @@ Write a script to complete the following challenge.
 - Script name: `square_root.sh`.
 - Work directory: `~/project`.
 
-### Sample Execution / Output
+## Sample Execution / Output

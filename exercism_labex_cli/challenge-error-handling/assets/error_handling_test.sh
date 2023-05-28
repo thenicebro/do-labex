@@ -1,21 +1,21 @@
 #!/usr/bin/env bats
 
 @test "correct arguments" {
-    run bash error_handling.sh Alice
+    run bash ~/project/error_handling.sh Alice
     
     [ "$status" -eq 0 ]
     [ "$output" = "Hello, Alice" ]
 }
 
 @test "one long argument" {
-    run bash error_handling.sh "Alice and Bob"
+    run bash ~/project/error_handling.sh "Alice and Bob"
     
     [ "$status" -eq 0 ]
     [ "$output" = "Hello, Alice and Bob" ]
 }
 
 @test "incorrect arguments" {
-    run bash error_handling.sh Alice Bob
+    run bash ~/project/error_handling.sh Alice Bob
 
     [ "$status" -ne 0 ]
 }

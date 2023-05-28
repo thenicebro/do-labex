@@ -4,7 +4,7 @@
     #[[ $BATS_RUN_SKIPPED == true  ]] || skip
     expected="99 bottles of beer on the wall, 99 bottles of beer. 
 Take one down and pass it around, 98 bottles of beer on the wall."
-    run bash beer_song.sh 99
+    run bash ~/project/beer_song.sh 99
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -13,7 +13,7 @@ Take one down and pass it around, 98 bottles of beer on the wall."
     #[[ $BATS_RUN_SKIPPED == true  ]] || skip
     expected="3 bottles of beer on the wall, 3 bottles of beer. 
 Take one down and pass it around, 2 bottles of beer on the wall."
-    run bash beer_song.sh 3
+    run bash ~/project/beer_song.sh 3
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -22,7 +22,7 @@ Take one down and pass it around, 2 bottles of beer on the wall."
     #[[ $BATS_RUN_SKIPPED == true  ]] || skip
     expected="2 bottles of beer on the wall, 2 bottles of beer. 
 Take one down and pass it around, 1 bottle of beer on the wall."
-    run bash beer_song.sh 2
+    run bash ~/project/beer_song.sh 2
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -31,7 +31,7 @@ Take one down and pass it around, 1 bottle of beer on the wall."
     #[[ $BATS_RUN_SKIPPED == true  ]] || skip
     expected="1 bottle of beer on the wall, 1 bottle of beer. 
 Take it down and pass it around, no more bottles of beer on the wall."
-    run bash beer_song.sh 1
+    run bash ~/project/beer_song.sh 1
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -40,7 +40,7 @@ Take it down and pass it around, no more bottles of beer on the wall."
     #[[ $BATS_RUN_SKIPPED == true  ]] || skip
     expected="No more bottles of beer on the wall, no more bottles of beer. 
 Go to the store and buy some more, 99 bottles of beer on the wall."
-    run bash beer_song.sh 0
+    run bash ~/project/beer_song.sh 0
 	echo $(diff "$expected" "$output")
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
@@ -53,7 +53,7 @@ Take one down and pass it around, 98 bottles of beer on the wall.
 
 98 bottles of beer on the wall, 98 bottles of beer. 
 Take one down and pass it around, 97 bottles of beer on the wall."
-    run bash beer_song.sh 99 98
+    run bash ~/project/beer_song.sh 99 98
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -69,7 +69,7 @@ Take it down and pass it around, no more bottles of beer on the wall.
 No more bottles of beer on the wall, no more bottles of beer. 
 Go to the store and buy some more, 99 bottles of beer on the wall."
 
-    run bash beer_song.sh 2 0
+    run bash ~/project/beer_song.sh 2 0
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
@@ -376,28 +376,28 @@ Take it down and pass it around, no more bottles of beer on the wall.
 No more bottles of beer on the wall, no more bottles of beer. 
 Go to the store and buy some more, 99 bottles of beer on the wall."
 
-    run bash beer_song.sh 99 0
+    run bash ~/project/beer_song.sh 99 0
     [[ $status -eq 0 ]]
     [[ $output == "$expected" ]]
 }
 
 @test 'no_arguments' {
     #[[ $BATS_RUN_SKIPPED == true  ]] || skip
-    run bash beer_song.sh
+    run bash ~/project/beer_song.sh
     [[ $status -ne 0 ]]
     [[ $output == *"1 or 2 arguments expected"* ]]
 }
 
 @test 'too_many_arguments' {
     #[[ $BATS_RUN_SKIPPED == true  ]] || skip
-    run bash beer_song.sh 1 2 3
+    run bash ~/project/beer_song.sh 1 2 3
     [[ $status -ne 0 ]]
     [[ $output == *"1 or 2 arguments expected"* ]]
 }
 
 @test 'wrong_order_arguments' {
     #[[ $BATS_RUN_SKIPPED == true  ]] || skip
-    run bash beer_song.sh 1 2
+    run bash ~/project/beer_song.sh 1 2
     [[ $status -ne 0 ]]
     [[ $output = "Start must be greater than End" ]]
 }

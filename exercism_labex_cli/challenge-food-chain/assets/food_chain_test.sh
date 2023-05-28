@@ -6,7 +6,7 @@
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     expected="I know an old lady who swallowed a fly.
 I don't know why she swallowed the fly. Perhaps she'll die."
-    run bash food_chain.sh 1 1
+    run bash ~/project/food_chain.sh 1 1
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -17,7 +17,7 @@ I don't know why she swallowed the fly. Perhaps she'll die."
 It wriggled and jiggled and tickled inside her.
 She swallowed the spider to catch the fly.
 I don't know why she swallowed the fly. Perhaps she'll die."
-    run bash food_chain.sh 2 2
+    run bash ~/project/food_chain.sh 2 2
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -29,7 +29,7 @@ How absurd to swallow a bird!
 She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
 She swallowed the spider to catch the fly.
 I don't know why she swallowed the fly. Perhaps she'll die."
-    run bash food_chain.sh 3 3
+    run bash ~/project/food_chain.sh 3 3
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -42,7 +42,7 @@ She swallowed the cat to catch the bird.
 She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
 She swallowed the spider to catch the fly.
 I don't know why she swallowed the fly. Perhaps she'll die."
-    run bash food_chain.sh 4 4
+    run bash ~/project/food_chain.sh 4 4
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -56,7 +56,7 @@ She swallowed the cat to catch the bird.
 She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
 She swallowed the spider to catch the fly.
 I don't know why she swallowed the fly. Perhaps she'll die."
-    run bash food_chain.sh 5 5
+    run bash ~/project/food_chain.sh 5 5
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -71,7 +71,7 @@ She swallowed the cat to catch the bird.
 She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
 She swallowed the spider to catch the fly.
 I don't know why she swallowed the fly. Perhaps she'll die."
-    run bash food_chain.sh 6 6
+    run bash ~/project/food_chain.sh 6 6
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -87,7 +87,7 @@ She swallowed the cat to catch the bird.
 She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
 She swallowed the spider to catch the fly.
 I don't know why she swallowed the fly. Perhaps she'll die."
-    run bash food_chain.sh 7 7
+    run bash ~/project/food_chain.sh 7 7
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -96,7 +96,7 @@ I don't know why she swallowed the fly. Perhaps she'll die."
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
     expected="I know an old lady who swallowed a horse.
 She's dead, of course!"
-    run bash food_chain.sh 8 8
+    run bash ~/project/food_chain.sh 8 8
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -116,7 +116,7 @@ How absurd to swallow a bird!
 She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
 She swallowed the spider to catch the fly.
 I don't know why she swallowed the fly. Perhaps she'll die."
-    run bash food_chain.sh 1 3
+    run bash ~/project/food_chain.sh 1 3
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
@@ -173,28 +173,28 @@ I don't know why she swallowed the fly. Perhaps she'll die.
 
 I know an old lady who swallowed a horse.
 She's dead, of course!"
-    run bash food_chain.sh 1 8
+    run bash ~/project/food_chain.sh 1 8
     (( status == 0 ))
     [[ $output == "$expected" ]]
 }
 
 @test 'no_arguments' {
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
-    run bash food_chain.sh
+    run bash ~/project/food_chain.sh
     [[ $status -ne 0 ]]
     [[ $output == *"2 arguments expected"* ]]
 }
 
 @test 'too_many_arguments' {
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
-    run bash food_chain.sh 1 2 3
+    run bash ~/project/food_chain.sh 1 2 3
     [[ $status -ne 0 ]]
     [[ $output == *"2 arguments expected"* ]]
 }
 
 @test 'wrong_order_arguments' {
     #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
-    run bash food_chain.sh 8 1
+    run bash ~/project/food_chain.sh 8 1
     [[ $status -ne 0 ]]
     [[ $output == *"Start must be less than or equal to End"* ]]
 }

@@ -11,4 +11,4 @@ Write a script to complete the following challenge.
 - Script name: `robot_simulator.sh`.
 - Work directory: `~/project`.
 
-### Sample Execution / Output
+## Sample Execution / Output

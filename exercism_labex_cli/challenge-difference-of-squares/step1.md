@@ -11,4 +11,4 @@ Write a script to complete the following challenge.
 - Script name: `difference_of_squares.sh`.
 - Work directory: `~/project`.
 
-### Sample Execution / Output
+## Sample Execution / Output

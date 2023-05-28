@@ -11,4 +11,4 @@ Write a script to complete the following challenge.
 - Script name: `protein_translation.sh`.
 - Work directory: `~/project`.
 
-### Sample Execution / Output
+## Sample Execution / Output

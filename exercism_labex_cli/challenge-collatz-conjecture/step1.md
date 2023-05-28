@@ -11,4 +11,4 @@ Write a script to complete the following challenge.
 - Script name: `collatz_conjecture.sh`.
 - Work directory: `~/project`.
 
-### Sample Execution / Output
+## Sample Execution / Output
